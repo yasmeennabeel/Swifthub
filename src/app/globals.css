@@ -1,4 +1,7 @@
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+@plugin "daisyui";
 @import "tailwindcss";
+
 
 :root {
   --background: #ffffff;
@@ -18,9 +21,34 @@
     --foreground: #ededed;
   }
 }
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/mona-sans/MonaSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/mona-sans/MonaSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/mona-sans/MonaSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
