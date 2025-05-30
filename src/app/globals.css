@@ -1,4 +1,4 @@
-/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+/* @import 'bootstrap/scss/bootstrap-grid.scss'; */
 @plugin "daisyui";
 @import "tailwindcss";
 
@@ -13,6 +13,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-mona: ['Mona Sans'];
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,34 +23,70 @@
     --foreground: #ededed;
   }
 }
+
 @font-face {
   font-family: 'Mona Sans';
-  src: url('/fonts/mona-sans/MonaSans-Regular.woff2') format('woff2');
-  font-weight: 400;
+  src: url('/fonts/MonaSans-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Mona Sans';
-  src: url('/fonts/mona-sans/MonaSans-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Mona Sans';
-  src: url('/fonts/mona-sans/MonaSans-Bold.woff2') format('woff2');
+  src: url('/fonts/MonaSans-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/MonaSans-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/MonaSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/MonaSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/MonaSans-Medium.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Mona Sans', sans-serif;
+
+}
+.mona-font {
+  font-family: 'Mona Sans', sans-serif;
 }
 
+.scrollbar-hide {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}

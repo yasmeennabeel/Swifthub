@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Footer() {
     return (
         <div>
-            <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+            <footer className="footer  sm:footer-horizontal mx-auto px-4 w-full max-w-screen-xl bg-base-200 text-base-content p-10">
                 <aside>
                     <div className="flex gap-4 items-center">
                         <Image src={'/images/logo.png'} alt="logo" width={50} height={20}></Image>

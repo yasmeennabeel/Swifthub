@@ -1,11 +1,11 @@
 
 import Image from 'next/image'
-import styles from './/Hero.module.css'
+
 
 
 export default function Hero() {
     return (
-        <div className="font-sans container mx-auto my-5 px-4 flex flex-col gap-4">
+        <div className={`font-sans mx-auto px-4 w-full max-w-screen-xl my-10  flex flex-col gap-4 `}>
             <div className="flex flex-col items-center gap-6">
                 <div className="gap-4 flex flex-col items-center text-center">
                     <h1 className="text-7xl font-bold font-sans"> Seamless Logistics, <br></br>Faster <span className="text-teal-700 italic font-sans">Deliveries</span></h1>
@@ -27,11 +27,11 @@ export default function Hero() {
 
                         <div className="flex items-center gap-2 bg-opacity-80 text-white bg-gray-500 rounded-full px-3 py-1 shadow">
                             <div className="flex -space-x-2 gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
                                 </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
                                 </svg>
 
                             </div>
@@ -44,24 +44,11 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    {/* <div className="flex md:absolute rounded-4xl rounded-t-none bg-white w-auto md:top-0 md:left-[470px] p-2 gap-3">
-                        <button className="bg-orange-500 text-white px-5 py-2 rounded-2xl text-sm shadow hover:bg-orange-600 transition">
-                            Our Services
-                        </button>
-                        <button className="bg-white text-orange-500 border border-orange-500 px-5 py-2 rounded-2xl text-sm shadow hover:bg-orange-100 transition">
-                            Contact Us
-                        </button>
-                    </div> */}
+                 
                     <div className='hidden md:flex md:absolute md:top-[-5px] md:left-1/2 transform -translate-x-1/2 pt-4'>
                         <div className='relative flex justify-center items-start'>
-                            {/* <svg
-                                viewBox="0 0 300 80"
-                                className="hidden md:flex w-[263px] h-[80px] transform md:absolute md:top-[-50px] md:left-1/2 -translate-x-1/2"
-                                preserveAspectRatio="none"
-                            >
-                                <path d="M0,80 Q150,-30 300,80 L300,0 L0,0 Z" fill="white" />
-                            </svg> */}
-                            <div className='bg-white w-[315px] h-[233px] rounded-full hidden md:flex  transform md:absolute md:top-[-190px] md:left-1/2 -translate-x-1/2'></div>
+                         
+                            <div className='bg-white w-[319px] h-[236px] rounded-full hidden md:flex  transform md:absolute md:top-[-190px] md:left-1/2 -translate-x-1/2'></div>
                             <div className="bg-white p-2 pt-0 rounded-3xl rounded-t-none relative flex gap-3 z-10">
                                 <button className="bg-orange-500 text-white px-5 py-2 rounded-3xl text-sm shadow hover:bg-orange-600 transition">
                                     Our Services

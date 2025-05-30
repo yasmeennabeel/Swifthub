@@ -1,9 +1,10 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+
 export default function Header() {
   return (
-    <div className="w-full font-sans container  h-[60px] sticky top-0 z-[99] bg-white  ">
+    <div className={`font-sans container  h-[60px] sticky top-0 z-[99] bg-white py-3 mx-auto px-4 w-full max-w-screen-xl`}>
       <div className='flex justify-between items-center'>
         <div className='flex items-center gap-4'>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 md:hidden flex">

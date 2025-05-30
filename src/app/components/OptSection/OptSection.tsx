@@ -1,12 +1,12 @@
 
 export default function OptSection() {
     return (
-        <div className="container font-sans">
+        <div className="mx-auto px-4 w-full max-w-screen-xl font-sans py-4">
             <div className="text-center flex flex-col items-center gap-3">
                 <h2 className="font-sans text-5xl font-semibold">Smart Route Optimization</h2>
-                <p className="text-gray-500 w-lg text-center">We analyze traffic patterns and use AI-driven mapping to ensure the fastest, most cost-effective delivery routes</p>
+                <p className="text-gray-500 w-1/2 text-center mb-5">We analyze traffic patterns and use AI-driven mapping to ensure the fastest, most cost-effective delivery routes</p>
             </div>
-            <div className="w-full flex gap-6 justify-center">
+            <div className="w-full flex flex-col md:flex-row gap-6 justify-center py-5">
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <figure className="!w-full !flex !justify-start !px-6 !pt-4 ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
@@ -29,8 +29,8 @@ export default function OptSection() {
 
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <figure className="!w-full !flex !justify-start !px-6 !pt-4 ">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
                         </svg>
 
                     </figure>
@@ -50,8 +50,8 @@ export default function OptSection() {
 
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <figure className="!w-full !flex !justify-start !px-6 !pt-4 ">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
                         </svg>
 
                     </figure>
