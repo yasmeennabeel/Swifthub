@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image"
 export default function BusSection() {
     return (
@@ -32,9 +34,11 @@ export default function BusSection() {
                         </div>
                     </div>
                 </div>
-                <div className="imgRight">
-                    <Image src={'/images/boat2.jpg'} alt={'cargoboat'} width={500} height={100} className="rounded-2xl"></Image>
+           <div className="bg-white rounded-3xl overflow-hidden shadow-lg group">
+              <div className='overflow-hidden rounded-3xl'>
+                    <Image src={'/images/boat2.jpg'} alt={'cargoboat'} width={500} height={100} className="rounded-2xl transition-transform duration-500 ease-in-out group-hover:scale-105 cursor-pointer"></Image>
                 </div>
+           </div>
             </div>
         </div>
     )

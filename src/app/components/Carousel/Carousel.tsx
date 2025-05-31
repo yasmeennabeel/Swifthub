@@ -64,7 +64,7 @@ export default function TestimonialCarousel() {
   };
 
   return (
-    <div className="relative w-full px-4 md:max-w-2xl mx-auto h-[380px] md:h-[450px] overflow-visible">
+    <div className="relative w-full px-4 md:max-w-2xl mx-auto h-[300px] md:h-[360px] overflow-visible">
       <div className="w-full h-[calc(100%-70px)] flex items-center justify-center">
         {testimonials.map((testimonial, index) => (
           <div
@@ -93,13 +93,13 @@ export default function TestimonialCarousel() {
         ))}
       </div>
 
-      <div className="w-[90%] md:w-full mx-auto h-px bg-gray-300 mb-3 md:mb-4"></div>
+  <div className="divider divider-neutral">
 
       <div className='flex items-center justify-center'>
         <div className='relative bg-black rounded-full flex gap-2 p-1 z-10'>
           <button
             onClick={prevSlide}
-            className="bg-opacity-30 bg-black border border-orange-500 text-orange-500 p-2 rounded-full shadow-md hover:bg-gray-100 hover:bg-opacity-10 transition"
+            className="bg-opacity-30 bg-black border border-orange-500 text-orange-500 p-2 rounded-full shadow-md hover:bg-gray-100 hover:bg-opacity-10 cursor-pointer transition"
             aria-label="Previous testimonial"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 md:size-6">
@@ -109,7 +109,7 @@ export default function TestimonialCarousel() {
 
           <button
             onClick={nextSlide}
-            className="bg-orange-500 text-white bg-opacity-30 p-2 rounded-full shadow-md hover:bg-opacity-50 transition"
+            className="bg-orange-500 text-white bg-opacity-30 p-2 rounded-full shadow-md hover:bg-opacity-50 hover:bg-white hover:text-orange-500 cursor-pointer transition"
             aria-label="Next testimonial"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 md:size-6">
@@ -117,6 +117,7 @@ export default function TestimonialCarousel() {
             </svg>
           </button>
         </div>
+      </div>
       </div>
     </div>
   );
