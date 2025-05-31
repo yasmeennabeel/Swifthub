@@ -6,7 +6,7 @@ import OptSection from "./components/OptSection/OptSection";
 import BusSection from "./components/BusSection/BusSection";
 import LogiSection from "./components/LogiSection/LogiSection";
 import TrustedBy from "./components/TrustedBy/TrustedBy";
-import TestimonialCarousel from "./Carousel/Carousel";
+import TestimonialCarousel from "./components/Carousel/Carousel";
 
 export default function Home() {
   return (
