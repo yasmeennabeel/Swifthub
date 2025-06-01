@@ -7,7 +7,7 @@ export default function TrustedBy({ align = "left" }) {
       : "items-start text-start";
 
   return (
-    <div className={`mx-auto p-4 w-full max-w-screen-xl `}>
+    <div className={`mx-auto p-4 w-full max-w-screen-xl mt-10`}>
       <div className=" justify-center">
         <div className={`gap-3 flex flex-col ${alignmentClasses}`}>
           <h1 className="text-4xl mona-font font-semibold">Trusted by Businesses</h1>

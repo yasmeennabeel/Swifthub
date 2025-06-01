@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Header() {
+  const links = ['Home', 'About Us', 'Sevices', 'Gallery', 'Contact']
   return (
     <div className={`sticky top-0 z-50 bg-white py-3 shadow-sm w-full `}>
       <div className='container mx-auto px-7 h-16 flex items-center justify-between'>
@@ -19,11 +20,13 @@ export default function Header() {
 
 
           <ul className='flex gap-7'>
-            <li><Link href='#' className='hover:text-orange-500 cursor-pointer hover:font-semibold transition'>Home</Link></li>
-            <li><Link href='#' className='hover:text-orange-500 cursor-pointer hover:font-semibold transition'>About Us</Link></li>
-            <li><Link href='#' className='hover:text-orange-500 cursor-pointer hover:font-semibold transition'>Services</Link></li>
-            <li><Link href='#' className='hover:text-orange-500 cursor-pointer hover:font-semibold transition'>Gallery</Link></li>
-            <li><Link href='#' className='hover:text-orange-500 cursor-pointer hover:font-semibold transition'>Contact</Link></li>
+            {
+              links.map((el, index) => (
+                <li key={index}>
+                  <Link href='#' className='hover:text-orange-500 cursor-pointer font-medium hover:font-semibold transition-all'>{el}</Link>
+                </li>
+              ))
+            }
           </ul>
         </div>
         <div>
