@@ -21,7 +21,7 @@ export default function LogiSection() {
         content: 'Get your shipments delivered at lightening speed with our express shipping service. We prioritize fast processing, quick dispatch, and on-time delivieries.',
         icon1: <MdOutlineDoorFront size={24} />,
         iconColor: 'text-black',
-        hoverIconColor: 'hover:text-white',
+        hoverIconColor: 'hover:text-black',
         bgColor: 'bg-white',
         textColor: 'text-black',
         hoverBg: 'hover:bg-black',
@@ -32,7 +32,7 @@ export default function LogiSection() {
         content: 'Get your shipments delivered at lightening speed with our express shipping service. We prioritize fast processing, quick dispatch, and on-time delivieries.',
         icon1: <AiOutlineGlobal size={24} />,
         iconColor: 'text-black',
-        hoverIconColor: 'hover:text-white',
+        hoverIconColor: 'hover:text-black',
         bgColor: 'bg-white',
         textColor: 'text-black',
         hoverBg: 'hover:bg-black',
@@ -47,7 +47,7 @@ export default function LogiSection() {
                 </div>
                 <div className="flex flex-col gap-6">
                     <div className="flex justify-end">
-                        <button className="bg-orange-500 text-white border border-transparent px-6 py-3 rounded-full font-medium text-sm shadow hover:bg-white hover:border hover:border-orange-500 hover:text-orange-500 cursor-pointer transition-all duration-300">View all Services</button>
+                        <button className="bg-orange-500 text-white border border-transparent px-6 py-3 rounded-full font-medium text-sm shadow hover:bg-black cursor-pointer transition-all duration-300">View all Services</button>
 
                     </div>
                     <p className="text-gray-600 text-base ">We deliver reliability with cutting-edge technology, real-time tracking, and a commitment to on-time performance, ensuring seamless logistics solutions</p>

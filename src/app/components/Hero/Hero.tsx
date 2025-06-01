@@ -8,20 +8,20 @@ import { FiUsers } from 'react-icons/fi';
 
 export default function Hero() {
     return (
-        <div className="mx-auto px-4 w-full max-w-screen-xl my-10  flex flex-col gap-4">
+        <div className="mx-auto px-4 w-full max-w-screen-xl my-10 flex flex-col gap-6">
             <div className="flex flex-col items-center gap-6 text-center">
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight"> Seamless Logistics, <br></br>Faster <span className="text-teal-700 italic font-sans">Deliveries</span></h1>
-                <p className=" text-gray-600 text-lg max-w-2xl">Streamlined freight management with real-time tracking</p>
+                <p className=" text-gray-600 text-lg max-w-2xl ">Streamlined freight management with real-time tracking</p>
 
             </div>
-            <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg mt-6 max-w-6xl mx-auto group">
-                <div className='overflow-hidden rounded-3xl'>
+            <div className="relative w-full max-w-6xl  mx-auto bg-white rounded-3xl overflow-hidden shadow-lg mt-6 group cursor-pointer">
+                <div className='overflow-hidden rounded-3xl '>
                     <Image
                         src="/images/boat.jpg"
                         alt="Cargo Ship"
-                        width={1100}
+                        width={1200}
                         height={600}
-                        className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 cursor-pointer"
+                        className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 "
                     />
                 </div>
 

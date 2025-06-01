@@ -27,12 +27,12 @@ export default function BusSection() {
                     <div className="join join-vertical bg-base-100">
                         {
                             accordionItems.map((el, index) => (
-                                <div key={index} className="collapse collapse-arrow join-item border border-base-300">
+                                <div key={index} className="collapse collapse-arrow join-item border border-base-300 hover:text-orange-500 cursor-pointer">
                                     <input type="radio" name="accordion" defaultChecked={index === 0}></input>
                                     <div className="collapse-title font-semibold text-lg md:text-xl">
-                                        <p>{el.title}</p>
+                                        <p className="cursor-pointer">{el.title}</p>
                                     </div>
-                                    <div className="collapse-content text-sm font-light">
+                                    <div className="collapse-content text-sm font-light text-gray-700">
                                         {el.content}
                                     </div>
                                 </div>

@@ -1,6 +1,7 @@
 "use client";
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 
 const testimonials = [
   {
@@ -12,7 +13,7 @@ const testimonials = [
   },
   {
     id: 2,
-    rating: 5,
+    rating: 4,
     content: "Exceptional service and on-time deliveries every time! The tracking system is highly accurate, and customer support is always helpful.",
     author: "Jidan.D",
     image: '/images/jidanpic.png'
@@ -28,6 +29,7 @@ const testimonials = [
 
 export default function TestimonialCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
 
   const nextSlide = () => {
     setActiveIndex((prevIndex) =>
@@ -62,9 +64,17 @@ export default function TestimonialCarousel() {
       return "opacity-0 scale-75 z-0";
     }
   };
+  useEffect(()=>{
+    if(!isAutoPlaying) return;
+    const interval = setInterval(nextSlide, 2000);
+    return ()=> clearInterval(interval)
+  }, [activeIndex, isAutoPlaying])
 
   return (
-    <div className="relative w-full px-4 md:max-w-2xl mx-auto h-[300px] md:h-[360px] overflow-visible">
+    <div 
+     onMouseEnter={() => setIsAutoPlaying(false)}
+      onMouseLeave={() => setIsAutoPlaying(true)}
+    className="relative w-full px-4 md:max-w-2xl mx-auto h-[300px] md:h-[360px] overflow-visible">
       <div className="w-full h-[calc(100%-70px)] flex items-center justify-center">
         {testimonials.map((testimonial, index) => (
           <div
@@ -85,6 +95,7 @@ export default function TestimonialCarousel() {
                   alt={'userAvatar'} 
                   fill
                   className='rounded-full object-cover'
+                  
                 />
               </div>
               <p className="text-gray-900 font-semibold text-sm md:text-base">{testimonial.author}</p>
@@ -102,9 +113,7 @@ export default function TestimonialCarousel() {
             className="bg-opacity-30 bg-black border border-orange-500 text-orange-500 p-2 rounded-full shadow-md hover:bg-gray-100 hover:bg-opacity-10 cursor-pointer transition"
             aria-label="Previous testimonial"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 md:size-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-            </svg>
+           <FaArrowLeftLong />
           </button>
 
           <button
@@ -112,9 +121,7 @@ export default function TestimonialCarousel() {
             className="bg-orange-500 text-white bg-opacity-30 p-2 rounded-full shadow-md hover:bg-opacity-50 hover:bg-white hover:text-orange-500 cursor-pointer transition"
             aria-label="Next testimonial"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 md:size-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-            </svg>
+           <FaArrowRightLong />
           </button>
         </div>
       </div>
